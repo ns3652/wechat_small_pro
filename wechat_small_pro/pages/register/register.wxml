@@ -1,0 +1,44 @@
+<!--pages/register/register.wxml-->
+<view class='register_main'>
+<view class='register_main_list'>
+<view class='register_main_list_left'>性别</view>
+<view class='register_main_list_right'>
+<radio-group class="radio-group" bindchange="sexChange">
+ <label class="radio" wx:for="{{items1}}" wx:key="*">
+<radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+ </label>
+</radio-group>
+</view>
+</view>
+<view class='register_main_list'>
+<view class='register_main_list_left'>用户名</view>
+<input class='register_main_list_right_input' placeholder='请输入用户名' bindinput="inputUsername"></input>
+</view>
+
+<view class='register_main_list'>
+<view class='register_main_list_left'>密码</view>
+<input class='register_main_list_right_input' placeholder='请输入密码' bindinput="inputPassword" password="true"></input>
+</view>
+<view class='register_main_list'>
+<view class='register_main_list_left'>确认密码</view>
+<input class='register_main_list_right_input' placeholder='请再次输入密码' bindinput="inputAgain" password="true"></input>
+</view>
+<!-- <view class='register_main_list'  hidden="{{hideItem}}">
+<view class='register_main_list_left'>推荐人手机</view>
+<input class='register_main_list_right_input'></input>
+</view> -->
+<!-- <view class='register_main_list'>
+<view class='register_main_list_left'>感情状态</view>
+<view class='register_main_list_right'>
+<radio-group class="radio-group" bindchange="chooseSpirit">
+ <label class="radio" wx:for="{{items2}}" wx:key="*">
+<radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+ </label>
+</radio-group>
+</view>
+</view> -->
+</view>
+<!-- <view class='register_main_bottom'>
+注册即表示您同意<text class='red'>{{rigText}}</text>
+</view> -->
+<view  class='attestation_button' hover-class='none' bindtap="submit">注册</view>
