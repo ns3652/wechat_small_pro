@@ -1,14 +1,38 @@
 {
   "pages": [
     "pages/login/login",
+    "pages/game_select/game_select",
     "pages/index/index",
-    "pages/register/register"
+    "pages/register/register",
+    "pages/my/my",
+    "pages/home/home",
+    "pages/invite_friend/invite_friend"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#c7bec9",
+    "selectedColor": "#fff",
+    "borderStyle": "white",
+    "backgroundColor": "#9f5992",
+    "list": [
+      {
+        "selectedIconPath": "/assets/images/imgpress2.png",
+        "iconPath": "/assets/images/img2.png",
+        "pagePath": "pages/game_select/game_select",
+        "text": "游戏"
+      },
+      {
+        "selectedIconPath": "/assets/images/imgpress1.png",
+        "iconPath": "/assets/images/img4.png",
+        "pagePath": "pages/my/my",
+        "text": "个人主页"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

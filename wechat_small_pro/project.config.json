@@ -35,7 +35,7 @@
 		"packNpmRelationList": []
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.16.0",
+	"libVersion": "2.7.1",
 	"appid": "wx13a0c0f4f6c291e1",
 	"projectname": "five-in-a-row",
 	"debugOptions": {

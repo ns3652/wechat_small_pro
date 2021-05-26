@@ -72,11 +72,15 @@ Page({
                     if (status){
                         wx.setStorageSync('token',res.data.data.token)
                         wx.setStorageSync('userName', res.data.data.userInfo.nickName)
+                        wx.setStorageSync('avatarUrl', res.data.data.userInfo.avatarUrl)
                         
                         console.log(request)
                         console.log(wx.getStorageSync("token"))
-                        wx.redirectTo({     ////跳转到首页
-                          url: '../index/index',
+                        // wx.redirectTo({     ////跳转到首页
+                        //   url: '../index/index',
+                        // })
+                        wx.switchTab({
+                          url: '../game_select/game_select',
                         })
                     }else{
                         wx.showToast({
@@ -136,15 +140,18 @@ Page({
                     //登陆成功
                     if (status){
                         that.data.weChatLoginRequest.nickName = that.data.username
+                        let avatarUrl = null
                         //wx.setStorageSync('weChatInfo', that.data.weChatLoginRequest)
                         wx.setStorageSync('token',res.data.data.token)
                         wx.setStorageSync('userName',res.data.data.userName)
+                        wx.setStorageSync('avatarUrl', avatarUrl)
                         
-                        
-                        wx.redirectTo({
-                          url: '../index/index',
-                        }) //跳转到首页
-                        
+                        // wx.redirectTo({
+                        //   url: '../index/index',
+                        // }) //跳转到首页
+                        wx.switchTab({
+                            url: '../game_select/game_select',
+                        })
                     }else{
                         wx.showToast({
                           title: '账号密码错误',

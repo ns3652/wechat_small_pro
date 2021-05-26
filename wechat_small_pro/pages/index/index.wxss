@@ -7,7 +7,7 @@
 .block{
   width:40rpx;
   height:40rpx;
-  background-color:darkorange;
+  background-color:rgba(10, 88, 235, 0.082);
   margin-left:4rpx;
   margin-top:4rpx;
   float:left;
