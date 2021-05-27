@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view>
+  <view>
+    {{result}}
+  </view>
+  <view class="qipan">
+    <view class="block" wx:for="{{vak}}" wx:key="{{index}}" bindtap="step" data-pos="{{index}}">
+      <view class="{{item}}"></view>
+    </view>
+  </view>
+  <view class="restart-container">
+    <button type="primary" bindtap="quit">退出</button>
+  </view>
+  <view>
+    您的用户名：{{userName}}
+  </view>
+  <view >
+    您的对手：{{toUserName==null||toUserName==''?'正在匹配中。。。':toUserName}}
+  </view>
+</view>

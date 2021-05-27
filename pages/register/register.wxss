@@ -1,0 +1,90 @@
+/* pages/register/register.wxss */
+page{
+  background-color: #f9f8fc;
+}
+.register_main{
+  background: #fff;
+  padding-left: 28rpx;
+  overflow: hidden;
+  border-top: 1rpx solid #e5e5e5;
+}
+.register_main_list{
+  height: 88rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  padding-right: 28rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+}
+.register_main_list_left{
+  float: left;
+  width: 25%;
+  overflow: hidden;
+  line-height: 88rpx;
+}
+.register_main_list_right{
+  float: right;
+  width: 73%;
+  overflow: hidden;
+  line-height: 88rpx;
+  padding-left: 2rpx;
+}
+.register_main_list_right_input{
+  float: right;
+  width: 73%;
+  overflow: hidden;
+  line-height: 88rpx;
+  padding-left: 2rpx;
+  height: 88rpx;
+  border: 0;
+  background:none;
+  font-size: 28rpx;
+}
+radio .wx-radio-input.wx-radio-input-checked::before{
+   background-color: #f97676; 
+   width:60rpx;
+   height:60rpx;
+   border-radius:60rpx;
+   font-size:30rpx;
+   line-height:60rpx;
+   text-align: center;
+   border: 1rpx solid #f97676;
+}
+.register_main_yanzheng{
+  width: 45%;
+  float: left;
+  padding-left: 2%;
+  height: 88rpx;
+  line-height: 88rpx;
+  border: 0;
+  background: none;
+  font-size: 28rpx;
+}
+.register_main_yanzheng_right{
+  float: right;
+  border-left: 1rpx solid #eee;
+  margin: 20rpx 0;
+  width: 26%;
+  text-align: center;
+  line-height: 48rpx;
+}
+.register_main_bottom{
+  margin: 28rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+}
+.red{
+  color: #f97676;
+}
+.attestation_button{
+  margin: 28rpx;
+  background: linear-gradient(to right,#bf8fce,#d88cb5);
+  height: 100rpx;
+  line-height: 100rpx;
+  display: block;
+  text-align: center;
+  color: #fff;
+  box-shadow: 3rpx 2rpx 13rpx 3rpx #f5e2fd;
+  border-radius: 100rpx;
+  font-weight: bold;
+  font-size: 30rpx;
+}

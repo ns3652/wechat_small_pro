@@ -1,0 +1,41 @@
+/* pages/danheng_person/danheng_person.wxss */
+page{
+  background-color: #f9f8fc;
+}
+.dansheng_person{
+  background: linear-gradient(to right,#bd8fd0,#d78cb6);
+  overflow: hidden;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: bold;
+  padding: 35rpx 28rpx;
+}
+.dansheng_person image{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 110rpx;
+  margin-right: 30rpx;
+  vertical-align: middle;
+}
+.dansheng_person_main{
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 30rpx;
+  padding-left: 28rpx;
+}
+.dansheng_person_main_list{
+  height: 100rpx;
+  line-height: 100rpx;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAaCAYAAACHD21cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjIwQTVBODc5MTY1MTFFOUJFRUQ5RUIwQ0MwNzQ1MDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjIwQTVBODg5MTY1MTFFOUJFRUQ5RUIwQ0MwNzQ1MDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGMjBBNUE4NTkxNjUxMUU5QkVFRDlFQjBDQzA3NDUwNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGMjBBNUE4NjkxNjUxMUU5QkVFRDlFQjBDQzA3NDUwNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv6kS/4AAAEmSURBVHjalNQxawIxGAbgXECsP+oWN/UoCKKD4OKgdBDsUourok6Cg9qpIHQQigXR9Sh3P6qVQs83kJPPkFxyBy+5yD3JR/KhF0XRgTFWQXq+7++Y48ORGvKAvMdx3M4DB+R954o5ynvD+JwXiw8Z8BLDq4LrVijxXMF74Ecr1OAC8mnCXP1B4qkNe0mSaEvBx2KBFzm9IFUsGhp3JDuPMCzktIicsFjZCjW4RLGxVKXsDYa+nP6Isrljhz0hW7Lz3hXar0NTpodhrZTactlxpqAAh/bNLbvRu0xRmFmqpgECawMATQj6Q5oUaSGQuPQxQQ2gY+apSjSzoTuooH9x5CZ0g0BDBXWAvrJO3MPfY4+0U4o+XDpnlRel8Iz8Il1XJJ6rAAMAtzGAt0S74gsAAAAASUVORK5CYII=) no-repeat right 28rpx center #fff;
+  background-size:14rpx 26rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  display: block;
+  color: #333;
+  font-size: 28rpx;
+}
+.dansheng_person_main_list image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 28rpx;
+  vertical-align: middle;
+}

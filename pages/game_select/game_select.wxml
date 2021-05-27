@@ -1,0 +1,31 @@
+<!--pages/select_project/select_project.wxml-->
+<view class='select_project_main' hover-class='none' bindtap="select_invite_friend">
+  <image src='/assets/images/pic13.png'></image>
+  <view class='select_project_main_left'>
+    <text class='size36'>免费建房</text>
+    <text class='size24'>\nFree room</text>
+  </view>
+</view>
+<navigator class='select_project_main' hover-class='none' url='../index/index'>
+  <image src='/assets/images/pic14.png'></image>
+  <view class='select_project_main_left'>
+    <text class='size36'>自由匹配</text>
+    <text class='size24'>\nFree matching</text>
+  </view>
+</navigator>
+<navigator class='select_project_main' hover-class='none' url='../activity_list/activity_list?id=2' bindtap="warning">
+<image src='/assets/images/pic15.png'></image>
+<view class='select_project_main_left'>
+<text class='size36'>人机对战</text>
+<text class='size24'>\nMan-Machine to war</text>
+</view>
+</navigator>
+
+<view class="container">
+  <modal hidden="{{hidden}}" title="提示" cancel-text="关闭"  bindconfirm="confirm" no-cancel="{{nocancel}}">
+    {{content}}
+  </modal>
+</view>
+
+
+

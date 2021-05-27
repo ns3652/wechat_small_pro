@@ -1,0 +1,66 @@
+<!--index.wxml-->
+<view>
+  <view>
+    {{result}}
+  </view>
+  <view class="qipan">
+    <view class="block" wx:for="{{vak}}" wx:key="{{index}}" bindtap="step" data-pos="{{index}}">
+      <view class="{{item}}"></view>
+    </view>
+  </view>
+  
+  <!-- <view class="pearson">
+    
+  </view> -->
+
+  <view>
+        <image src='{{gameUser1Img}}' class="user_image" hidden='{{gameUser1Hiddenflg}}'></image>
+        <image src='{{gameUser2Img}}' class="user_image" hidden='{{gameUser2Hiddenflg}}'></image> 
+    </view>
+    <button class="yaoqing" open-type="share"><text class='yaoqing_text'>邀请</text></button>
+  
+  <!-- <view class="pearson">
+    <view>
+        <image src='{{gameUser2Img}}' ></image>{{gameUser1}} 
+    </view>
+  </view> -->
+
+
+  
+ 
+  <!-- <view class="pearson">
+    <image src='/assets/images/jiahao.png' ></image>{{userName}} 
+    
+  </view> -->
+
+  <view class="restart-container">
+    <button type="primary" bindtap="quit">退出房间</button>
+  </view>
+  <!-- <view >
+    您的对手：{{toUserName==null||toUserName==''?'正在匹配中。。。':toUserName}}
+  </view> -->
+  
+  
+</view>
+
+<view>
+  <modal title="房间号:{{room}}"  bindconfirm="modalConfirm" bindcancel="modalCandel" hidden='{{modalHiddenFlg}}'>
+    <view class="jiazai" hidden='{{jiazaiHiddenFlg}}'>
+      <image src="/assets/images/jiazaizhong.gif"></image>
+    </view>
+    <view hidden='{{!jiazaiHiddenFlg}}'>房间号创建成功！！！</view>
+  </modal>
+</view>
+
+
+<view class='dialog-container' hidden="{{hasUserInfo}}">
+        <!-- <text>{{hasUserInfo}}</text> -->
+        <view class='dialog-mask'></view>
+        <view class='dialog-info'>
+            <view class='dialog-title'>登陆提示</view>
+            <view class='dialog-content'>为了您能有更好的体验，请点击授权?</view>
+            <view class='dialog-footer'>
+                <button class='dialog-btn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权 </button>
+            </view>
+        </view>
+    </view>
